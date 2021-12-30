@@ -53,5 +53,5 @@ var setup = function () {
 
 window.onload = function () {
   setup();
-  intervalId = setInterval(makeNoise, 50);
+  intervalId = setInterval(makeNoise, 75);
 };

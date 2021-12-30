@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&display=swap");
+
+body {
+  width: 100vmin;
+  height: 75vmin;
+  font-family: "Azeret Mono", monospace;
+}
+
+#tv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#fragment {
+  left: 15vmin;
+  position: absolute;
+  text-align: center;
+  top: 15vmin;
+  width: 70vmin;
+  font-size: 6vmin;
+  color: #eee;
+  background-color: #55555520;
+}
+
+#author {
+  left: 55vmin;
+  position: absolute;
+  top: 60vmin;
+  width: 30vmin;
+  font-size: 3vmin;
+  text-align: right;
+  color: #eee;
+  background-color: #55555520;
+}
