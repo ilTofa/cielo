@@ -22,10 +22,10 @@ var pinkNoise = (function () {
   return node;
 })();
 
-pinkNoise.connect(audioContext.destination);
-setTimeout(function () {
-  pinkNoise.disconnect(audioContext.destination);
-}, 4000);
+// stop noise during development
+// setTimeout(function () {
+//   pinkNoise.disconnect(audioContext.destination);
+// }, 4000);
 
 var canvas = null;
 var context = null;
@@ -54,4 +54,5 @@ var setup = function () {
 window.onload = function () {
   setup();
   intervalId = setInterval(makeNoise, 75);
+  pinkNoise.connect(audioContext.destination);
 };
